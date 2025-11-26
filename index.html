@@ -337,21 +337,21 @@
                     && b.y > crate.y && b.y < crate.y + crate.h / 2) {
                     score += 100;
                     playSound(soundGotIt);
-                    if (score >= 10000) {
+                    if (score >= 1000) {
                         glassState = 0.09;
                         if (girlState < 5) {
                             playSound(soundLevelUp);
-                            pauseTime = 6000;
+                            pauseTime = 600;
                         }
                         girlState = 5;
-                    } else if (score >= 8000) {
+                    } else if (score >= 800) {
                         glassState = 0.22;
                         if (girlState < 4) {
                             playSound(soundLevelUp);
                             pauseTime = 6000;
                         }
                         girlState = 4;
-                    } else if (score >= 6000) {
+                    } else if (score >= 600) {
                         glassState = 0.35;
                         if (girlState < 3) {
                             playSound(soundLevelUp);
@@ -365,7 +365,7 @@
                             pauseTime = 6000;
                         }
                         girlState = 2;
-                    } else if (score >= 2000) {
+                    } else if (score >= 200) {
                         glassState = 0.6;
                         if (girlState < 1) {
                             playSound(soundLevelUp);
